@@ -54,18 +54,18 @@ Links:
 | --- | --- | --- |
 | **Functionality** | | |
 | &nbsp; | | |
-| Date Format<br><sub><sup>`new Date()` ⟹ Oct 23, 2014, 9:00:00 AM</sup></sub> | :heavy_check_mark: | :heavy_check_mark: |
-| Date Parse<br><sub><sup>Oct 23, 2014, 9:00:00 AM ⟹ `new Date()`</sup></sub> | | :heavy_check_mark: |
-| Relative Time Format<br><sub><sup>`new Date()` ⟺ last month</sup></sub> | | :soon: |
+| [Date Format][]<br><sub><sup>`new Date()` ⟹ Oct 23, 2014, 9:00:00 AM</sup></sub> | :heavy_check_mark: | :heavy_check_mark: |
+| [Date Parse][]<br><sub><sup>Oct 23, 2014, 9:00:00 AM ⟹ `new Date()`</sup></sub> | | :heavy_check_mark: |
+| [Relative Time Format][]<br><sub><sup>`new Date()` ⟹ last month</sup></sub> | | :soon: |
 | &nbsp; | | |
-| Number Format<br><sub><sup>`12734.89` ⟹ 12,734.89</sup></sub> | :heavy_check_mark: | :heavy_check_mark: |
-| Number Parse<br><sub><sup>12,734.89 ⟹ `12734.89`</sup></sub> | | :heavy_check_mark: |
+| [Number Format][]<br><sub><sup>`12734.89` ⟹ 12,734.89</sup></sub> | :heavy_check_mark: | :heavy_check_mark: |
+| [Number Parse][]<br><sub><sup>12,734.89 ⟹ `12734.89`</sup></sub> | | :heavy_check_mark: |
 | &nbsp; | | |
-| Currency Format<br><sub><sup>`{EUR: 1000.00}` ⟹ €1,000.00</sup></sub> | :heavy_check_mark: | :soon: |
-| Currency Parse<br><sub><sup>€1,000.00 ⟹ `{EUR: 1000.00}`</sup></sub> | | :soon: |
+| [Currency Format][]<br><sub><sup>`{EUR: 1000.00}` ⟹ €1,000.00</sup></sub> | :heavy_check_mark: | :soon: |
+| [Currency Parse][]<br><sub><sup>€1,000.00 ⟹ `{EUR: 1000.00}`</sup></sub> | | :soon: |
 | &nbsp; | | |
-| Plural<br><sub><sup>`3` ⟹ `few`</sup></sub> | | :heavy_check_mark:<br><sub><sup>Powered&nbsp;by&nbsp;[santhoshtr/cldrpluralruleparser][]</sup></sub> |
-| Format Message<br><sub><sup>`You have {count, plural,`<br>` one {1 item}`<br>` other {# items}}` ⟹ You have 5 items</sup></sub> | | :heavy_check_mark:<br><sub><sup>Powered&nbsp;by&nbsp;[slexaxton/messageformat.js][]</sup></sub> |
+| [Plural][]<br><sub><sup>`3` ⟹ `few`</sup></sub> | | :heavy_check_mark:<br><sub><sup>Powered&nbsp;by&nbsp;[santhoshtr/cldrpluralruleparser][]</sup></sub> |
+| [Message Format][]<br><sub><sup>`You have {count, plural,`<br>` one {1 item}`<br>` other {# items}}` ⟹ You have 5 items</sup></sub> | | :heavy_check_mark:<br><sub><sup>Powered&nbsp;by&nbsp;[slexaxton/messageformat.js][]</sup></sub> |
 | &nbsp; | | |
 | Collation | :heavy_check_mark: | |
 | &nbsp; | | |
@@ -90,3 +90,13 @@ Links:
 [jquery/globalize]: https://github.com/jquery/globalize/
 [santhoshtr/cldrpluralruleparser]: https://github.com/santhoshtr/CLDRPluralRuleParser/
 [slexaxton/messageformat.js]: https://github.com/SlexAxton/messageformat.js/
+
+[Date Format]: ./date-format.md
+[Date Parse]: ./date-parse.md
+[Relative Time Format]: ./relative-time-format.md
+[Number Format]: ./number-format.md
+[Number Parse]: ./number-parse.md
+[Currency Format]: ./currency-format.md
+[Currency Parse]: ./currency-parse.md
+[Plural]: ./plural.md
+[Message Format]: ./message-format.md
