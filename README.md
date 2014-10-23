@@ -66,16 +66,11 @@ Links:
 | &nbsp; | | |
 | [Plural][]<br><sub><sup>`3` ⟹ `few`</sup></sub> | | :heavy_check_mark:<br><sub><sup>Powered&nbsp;by&nbsp;[santhoshtr/cldrpluralruleparser][]</sup></sub> |
 | [Message Format][]<br><sub><sup>`You have {count, plural,`<br>` one {1 item}`<br>` other {# items}}` ⟹ You have 5 items</sup></sub> | | :heavy_check_mark:<br><sub><sup>Powered&nbsp;by&nbsp;[slexaxton/messageformat.js][]</sup></sub> |
+| Template integration | | |
 | &nbsp; | | |
 | Collation | :heavy_check_mark: | |
 | &nbsp; | | |
 | **I18n data** | Compiled | [CLDR][] >= 25 |
-| &nbsp; | | |
-| **Template integration** | | |
-| &nbsp; | | |
-| Dust | | |
-| Handlebars | | |
-| React | | |
 | &nbsp; | | |
 | **Support** | | |
 | &nbsp; | | |
