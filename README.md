@@ -72,16 +72,18 @@ Links:
  
 ## Google Closure i18n
 
-Part of the larger Closure library, based on CLDR data.
+Part of the larger Closure library, based on CLDR data. Provides:
+- Number formatting and parsing
+- Date and time formatting and parsing
+- Message formatting, including plural and gender support
+- Access to some of the CLDR data, like currency symbols
 
 Strenghts
-- Easy to use
-- Tracks the latest CLDR data
-- Supports large number of locales
-- Number format/parse, Date/Time format/parse, Message formatter (with plural/gender), CLDR data access...
+- Tracks the latest CLDR data (usually two months behind the latest CLDR version)
+- Supports large number of locales (all of the CLDR locales)
 
 Weaknesses
-- Supports only one locale at the time
+- Supports only one locale at the time (default model, can be bypassed)
  
 Links
 - http://docs.closure-library.googlecode.com/git/namespace_goog_i18n.html
