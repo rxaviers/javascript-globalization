@@ -52,8 +52,8 @@ if using multiple i18n libraries that leverage CLDR, and (d) run in browsers or
 node.js.
 
 Strengths
+- Based on CLDR data (largest and most extensive i18n repository).
 - No bugs due to outdated i18n content (it has no hard coded i18n data).
-- Parsing.
 - Allow different locale instances running simultaneously.
 
 Links:
