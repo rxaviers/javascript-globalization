@@ -35,6 +35,7 @@ Standalone library created by Santhosh Thottingal that provides CLDR plural rule
 parsing. Used by Wikimedia Foundation.
 
 Strengths
+- Based on CLDR data (largest and most extensive i18n repository).
 - No bugs due to outdated i18n content (it has no hard coded i18n data).
 
 Links:
