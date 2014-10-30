@@ -69,6 +69,22 @@ Strengths
 
 Links:
 - https://github.com/SlexAxton/messageformat.js/
+ 
+## Google Closure i18n
+
+Part of the larger Closure library, based on CLDR data.
+
+Strenghts
+- Easy to use
+- Tracks the latest CLDR data
+- Supports large number of locales
+- Number format/parse, Date/Time format/parse, Message formatter (with plural/gender), CLDR data access...
+
+Weaknesses
+- Supports only one locale at the time
+ 
+Links
+- http://docs.closure-library.googlecode.com/git/namespace_goog_i18n.html
 
 ## Grid
 
