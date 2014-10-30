@@ -59,6 +59,22 @@ Strengths
 Links:
 - https://github.com/jquery/globalize/
 
+### Google Closure i18n
+
+Part of the larger Closure library, based on CLDR data. Provides number
+formatting and parsing, date and time formatting and parsing, message
+formatting (including plural and gender support), access to some of the CLDR
+data (like currency symbols).
+
+Strenghts
+- Based on CLDR data (largest and most extensive i18n repository).
+
+Weaknesses
+- Supports only one locale at the time (default model, can be bypassed).
+ 
+Links
+- http://docs.closure-library.googlecode.com/git/namespace_goog_i18n.html
+
 ### Messageformat.js
 
 Standalone library created by Alex Sexton that provides ICU MessageFormat
@@ -70,24 +86,6 @@ Strengths
 Links:
 - https://github.com/SlexAxton/messageformat.js/
  
-## Google Closure i18n
-
-Part of the larger Closure library, based on CLDR data. Provides:
-- Number formatting and parsing
-- Date and time formatting and parsing
-- Message formatting, including plural and gender support
-- Access to some of the CLDR data, like currency symbols
-
-Strenghts
-- Tracks the latest CLDR data (usually two months behind the latest CLDR version)
-- Supports large number of locales (all of the CLDR locales)
-
-Weaknesses
-- Supports only one locale at the time (default model, can be bypassed)
- 
-Links
-- http://docs.closure-library.googlecode.com/git/namespace_goog_i18n.html
-
 ## Grid
 
 | | ECMA-402<br><sub><sup>Native</sup></sub> | Cldrpluralruleparser<br><sub><sup>[santhoshtr/cldrpluralruleparser][]</sup></sub> | Globalize<br><sub><sup>[jquery/globalize][]</sup></sub> | Messageformat.js<br><sub><sup>[slexaxton/messageformat.js][]</sup></sub> |
