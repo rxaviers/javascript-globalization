@@ -72,7 +72,7 @@ Strenghts
 
 Weaknesses
 - Supports only one locale at the time (default model, can be bypassed).
- 
+
 Links
 - http://docs.closure-library.googlecode.com/git/namespace_goog_i18n.html
 
@@ -86,37 +86,56 @@ Strengths
 
 Links:
 - https://github.com/SlexAxton/messageformat.js/
- 
+
+### jquery.i18n
+jquery based library port of MediaWiki's client side localization framework.
+Used by Wikimedia Foundation. Uses JSON based message file format(aka. banana format).
+Messages are in MediaWiki's own syntax. Supported Plural, Gender, Grammer, Number formatting.
+Also supports recursive nesting of plural, gender, grammar etc.
+
+Strenghts
+- Based on CLDR data (largest and most extensive i18n repository).
+- Message validators exist(https://www.npmjs.org/package/grunt-banana-checker)
+- Extensible message syntax
+
+Weaknesses
+- jQuery based library.
+
+Links:
+- https://github.com/wikimedia/jquery.i18n
+
 ## Grid
 
-| | ECMA-402<br><sub><sup>Native</sup></sub> | Cldrpluralruleparser<br><sub><sup>[santhoshtr/cldrpluralruleparser][]</sup></sub> | Globalize<br><sub><sup>[jquery/globalize][]</sup></sub> | Messageformat.js<br><sub><sup>[slexaxton/messageformat.js][]</sup></sub> |
+| | ECMA-402<br><sub><sup>Native</sup></sub> | Cldrpluralruleparser<br><sub><sup>[santhoshtr/cldrpluralruleparser][]</sup></sub> | Globalize<br><sub><sup>[jquery/globalize][]</sup></sub> | Messageformat.js<br><sub><sup>[slexaxton/messageformat.js][]</sup></sub> | jquery.i18n<br><sub><sup>[wikimedia/jquery.i18n][]</sup></sub>
 | --- | --- | --- | --- | --- |
-| **Functionality** | | | | |
+| **Functionality** | | | | | |
+| &nbsp; | | | | | |
+| [Date Format][]<br><sub><sup>`new Date()` ⟹ Oct 23, 2014, 9:00:00 AM</sup></sub> | :heavy_check_mark: | | :heavy_check_mark: | | |
+| [Date Parse][]<br><sub><sup>Oct 23, 2014, 9:00:00 AM ⟹ `new Date()`</sup></sub> | | | :heavy_check_mark: | | |
+| [Relative Time Format][]<br><sub><sup>`new Date()` ⟹ last month</sup></sub> | | | :soon: | | |
+| &nbsp; | | | | | |
+| [Number Format][]<br><sub><sup>`12734.89` ⟹ 12,734.89</sup></sub> | :heavy_check_mark: | | :heavy_check_mark: | | |
+| [Number Parse][]<br><sub><sup>12,734.89 ⟹ `12734.89`</sup></sub> | | | :heavy_check_mark: | | |
+| [Number transformation][]<br><sub><sup>0123456789 ⟹ `٠١٢٣٤٥٦٧٨٩`</sup></sub> | | | | | :heavy_check_mark:|
 | &nbsp; | | | | |
-| [Date Format][]<br><sub><sup>`new Date()` ⟹ Oct 23, 2014, 9:00:00 AM</sup></sub> | :heavy_check_mark: | | :heavy_check_mark: | |
-| [Date Parse][]<br><sub><sup>Oct 23, 2014, 9:00:00 AM ⟹ `new Date()`</sup></sub> | | | :heavy_check_mark: | |
-| [Relative Time Format][]<br><sub><sup>`new Date()` ⟹ last month</sup></sub> | | | :soon: | |
+| [Currency Format][]<br><sub><sup>`{EUR: 1000.00}` ⟹ €1,000.00</sup></sub> | :heavy_check_mark: | | :soon: | | |
+| [Currency Parse][]<br><sub><sup>€1,000.00 ⟹ `{EUR: 1000.00}`</sup></sub> | | | :soon: | | |
 | &nbsp; | | | | |
-| [Number Format][]<br><sub><sup>`12734.89` ⟹ 12,734.89</sup></sub> | :heavy_check_mark: | | :heavy_check_mark: | |
-| [Number Parse][]<br><sub><sup>12,734.89 ⟹ `12734.89`</sup></sub> | | | :heavy_check_mark: | |
-| &nbsp; | | | | |
-| [Currency Format][]<br><sub><sup>`{EUR: 1000.00}` ⟹ €1,000.00</sup></sub> | :heavy_check_mark: | | :soon: | |
-| [Currency Parse][]<br><sub><sup>€1,000.00 ⟹ `{EUR: 1000.00}`</sup></sub> | | | :soon: | |
-| &nbsp; | | | | |
-| [Plural][]<br><sub><sup>`3` ⟹ `few`</sup></sub> | | :heavy_check_mark: | :heavy_check_mark:<br><sub><sup>Powered&nbsp;by&nbsp;[santhoshtr/cldrpluralruleparser][]</sup></sub> | |
-| [Message Format][]<br><sub><sup>`You have {count, plural,`<br>` one {1 item}`<br>` other {# items}}` ⟹ You have 5 items</sup></sub> | | | :heavy_check_mark:<br><sub><sup>Powered&nbsp;by&nbsp;[slexaxton/messageformat.js][]</sup></sub> | :heavy_check_mark: |
-| Template integration | | | | |
-| &nbsp; | | | | |
-| Collation | :heavy_check_mark: | | | |
-| &nbsp; | | | | |
-| **I18n data** | Compiled | | [CLDR][] >= 25 | |
-| &nbsp; | | | | |
-| **Support** | | | | |
-| &nbsp; | | | | |
-| Environments | Globals | AMD<br>CommonJS<br>Globals | AMD<br>CommonJS<br>Globals | AMD<br>CommonJS<br>Globals |
-| Node.js | >= 0.12<br><sub><sup>`en` only by default</sup></sub> | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Browser | Chrome: 24<br>Firefox: 29<br>Safari: N/A<br>Opera: 15<br>IE: 11<br><sub><sup>Reference MDN.</sup></sub> | | Chrome: <sub><sup>(Current - 1) or Current</sup></sub><br>Firefox: <sub><sup>(Current - 1) or Current</sup></sub><br>Safari: 5.1+<br>Opera: 12.1x, <sub><sup>(Current - 1) or Current</sup></sub><br>IE: 8 <sub><sup>(needs ES5 polyfill)</sup></sub>, IE9+ | |
-| Mobile | | | iOS: 6.1+<br>Android: 2.3, 4.0+ | |
+| [Plural][]<br><sub><sup>`3` ⟹ `few`</sup></sub> | | :heavy_check_mark: | :heavy_check_mark:<br><sub><sup>Powered&nbsp;by&nbsp;[santhoshtr/cldrpluralruleparser][]</sup></sub> | |:heavy_check_mark:<br><sub><sup>Powered&nbsp;by&nbsp;[santhoshtr/cldrpluralruleparser][]</sup></sub> |
+| [Message Format][]<br><sub><sup>`You have {count, plural,`<br>` one {1 item}`<br>` other {# items}}` ⟹ You have 5 items</sup></sub> | | | :heavy_check_mark:<br><sub><sup>Powered&nbsp;by&nbsp;[slexaxton/messageformat.js][]</sup></sub> | :heavy_check_mark: | :heavy_check_mark: <br><sub><sup>Extensible mediawiki message format</sup></sub>|
+| Gender| | |  |  |:heavy_check_mark:|
+| Template integration | | | | | |
+| &nbsp; | | | | | |
+| Collation | :heavy_check_mark: | | | | |
+| &nbsp; | | | | | |
+| **I18n data** | Compiled | | [CLDR][] >= 25 | | [CLDR][] >= 25|
+| &nbsp; | | | | | |
+| **Support** | | | | | |
+| &nbsp; | | | | | |
+| Environments | Globals | AMD<br>CommonJS<br>Globals | AMD<br>CommonJS<br>Globals | AMD<br>CommonJS<br>Globals | JQuery|
+| Node.js | >= 0.12<br><sub><sup>`en` only by default</sup></sub> | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | |
+| Browser | Chrome: 24<br>Firefox: 29<br>Safari: N/A<br>Opera: 15<br>IE: 11<br><sub><sup>Reference MDN.</sup></sub> | | Chrome: <sub><sup>(Current - 1) or Current</sup></sub><br>Firefox: <sub><sup>(Current - 1) or Current</sup></sub><br>Safari: 5.1+<br>Opera: 12.1x, <sub><sup>(Current - 1) or Current</sup></sub><br>IE: 8 <sub><sup>(needs ES5 polyfill)</sup></sub>, IE9+ | | Anything that jQuery supports |
+| Mobile | | | iOS: 6.1+<br>Android: 2.3, 4.0+ | | | |
 
 [andyearnshaw/intl.js]: https://github.com/andyearnshaw/Intl.js/
 [CLDR]: http://cldr.unicode.org/index/cldr-spec/json
@@ -124,7 +143,7 @@ Links:
 [jquery/globalize]: https://github.com/jquery/globalize/
 [santhoshtr/cldrpluralruleparser]: https://github.com/santhoshtr/CLDRPluralRuleParser/
 [slexaxton/messageformat.js]: https://github.com/SlexAxton/messageformat.js/
-
+[wikimedia/jquery.i18n]: https://github.com/wikimedia/jquery.i18n/
 [Date Format]: ./date-format.md
 [Date Parse]: ./date-parse.md
 [Relative Time Format]: ./relative-time-format.md
