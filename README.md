@@ -94,8 +94,7 @@ FormatJS is a modular collection of JavaScript libraries for internationalizatio
 Strengths:
 - Integrates with template/component libraries: [Handlebars](http://formatjs.io/handlebars/), [React](http://formatjs.io/react/), and [Dust](http://formatjs.io/dust/).
 - Modular, integration libs (above) are built on [core libraries](http://formatjs.io/github/#core): [intl-mesageformat](https://github.com/yahoo/intl-messageformat), [intl-relativetime](https://github.com/yahoo/intl-relativeformat).
-- Focus on formatting dates, numbers, and strings messages.
-- Runs in the browser (even IE6), and Node.js.
+- IE6+ support, automated testing in IE7+.
 - Built on standards: ECMA-402, CLDR, and ICU Message syntax.
 
 Weaknesses:
@@ -111,20 +110,20 @@ Links:
 | --- | --- | --- | --- | --- | --- |
 | **Functionality** | | | | | |
 | &nbsp; | | | | | |
-| [Date Format][]<br><sub><sup>`new Date()` ⟹ Oct 23, 2014, 9:00:00 AM</sup></sub> | :heavy_check_mark: | | :heavy_check_mark: | | :heavy_check_mark: |
+| [Date Format][]<br><sub><sup>`new Date()` ⟹ Oct 23, 2014, 9:00:00 AM</sup></sub> | :heavy_check_mark: | | :heavy_check_mark: | | :heavy_check_mark:<br><sub><sup>Via&nbsp;ECMA-402 or its polyfil</sup></sub> |
 | [Date Parse][]<br><sub><sup>Oct 23, 2014, 9:00:00 AM ⟹ `new Date()`</sup></sub> | | | :heavy_check_mark: | | |
-| [Relative Time Format][]<br><sub><sup>`new Date()` ⟹ last month</sup></sub> | | | :soon: | | :heavy_check_mark: |
+| [Relative Time Format][]<br><sub><sup>`new Date()` ⟹ last month</sup></sub> | | | :soon: | | :heavy_check_mark:<br><sub><sup>Via&nbsp;[intl-relativeformat](https://github.com/yahoo/intl-relativeformat)</sup></sub> |
 | &nbsp; | | | | | |
-| [Number Format][]<br><sub><sup>`12734.89` ⟹ 12,734.89</sup></sub> | :heavy_check_mark: | | :heavy_check_mark: | | :heavy_check_mark: |
+| [Number Format][]<br><sub><sup>`12734.89` ⟹ 12,734.89</sup></sub> | :heavy_check_mark: | | :heavy_check_mark: | | :heavy_check_mark:<br><sub><sup>Via&nbsp;ECMA-402 or its polyfil</sup></sub> |
 | [Number Parse][]<br><sub><sup>12,734.89 ⟹ `12734.89`</sup></sub> | | | :heavy_check_mark: | | |
 | &nbsp; | | | | | |
-| [Currency Format][]<br><sub><sup>`{EUR: 1000.00}` ⟹ €1,000.00</sup></sub> | :heavy_check_mark: | | :soon: | | :heavy_check_mark: |
+| [Currency Format][]<br><sub><sup>`{EUR: 1000.00}` ⟹ €1,000.00</sup></sub> | :heavy_check_mark: | | :soon: | | :heavy_check_mark:<br><sub><sup>Via&nbsp;ECMA-402 or its polyfil</sup></sub> |
 | [Currency Parse][]<br><sub><sup>€1,000.00 ⟹ `{EUR: 1000.00}`</sup></sub> | | | :soon: | | |
 | &nbsp; | | | | | |
 | [Plural][]<br><sub><sup>`3` ⟹ `few`</sup></sub> | | :heavy_check_mark: | :heavy_check_mark:<br><sub><sup>Powered&nbsp;by&nbsp;[santhoshtr/cldrpluralruleparser][]</sup></sub> | | :heavy_check_mark: |
-| [Message Format][]<br><sub><sup>`You have {count, plural,`<br>` one {1 item}`<br>` other {# items}}` ⟹ You have 5 items</sup></sub> | | | :heavy_check_mark:<br><sub><sup>Powered&nbsp;by&nbsp;[slexaxton/messageformat.js][]</sup></sub> | :heavy_check_mark: | :heavy_check_mark: |
+| [Message Format][]<br><sub><sup>`You have {count, plural,`<br>` one {1 item}`<br>` other {# items}}` ⟹ You have 5 items</sup></sub> | | | :heavy_check_mark:<br><sub><sup>Powered&nbsp;by&nbsp;[slexaxton/messageformat.js][]</sup></sub> | :heavy_check_mark: | :heavy_check_mark:<br><sub><sup>Via&nbsp;[intl-messageformat](https://github.com/yahoo/intl-messageformat)</sup></sub> |
 | &nbsp; | | | | | |
-| Template integration | | | | | :heavy_check_mark: |
+| Template integration | | | | | Handlebars<br>React<br>Dust |
 | &nbsp; | | | | | |
 | Collation | :heavy_check_mark: | | | | |
 | &nbsp; | | | | | |
