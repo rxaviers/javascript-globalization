@@ -1,11 +1,10 @@
-## Number Parse
+## Unicode Character Properties
 
-12,734.89 ⟹ `12734.89`
+isUpper('A') ⟹ true
 
 | | ECMA-402<br><sub><sup>Native</sup></sub> | Globalize<br><sub><sup>[jquery/globalize][]</sup></sub> | iLib |
 | --- | --- | --- | --- |
-| Regular Parsing | | | :heavy_check_mark: |
-| Currency Parsing | | | :heavy_check_mark: |
-| Percentage Parsing | | | :heavy_check_mark: |
+| Retrieve or test character properties | | | :heavy_check_mark: |
+| Surrogate or "Astral" Plane Support | | | :heavy_check_mark: |
 
 [jquery/globalize]: https://github.com/jquery/globalize/
