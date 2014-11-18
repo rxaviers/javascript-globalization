@@ -29,6 +29,37 @@ Links
 - http://norbertlindenberg.com/2012/12/ecmascript-internationalization-api/index.html
 - http://generatedcontent.org/post/59403168016/esintlapi (locale support)
 
+### ibm-js/ecma402
+
+JavaScript implementation of some of the ECMA-402 APIs as developed by IBM.
+It provides number formatting and date and time formatting, but not collation.
+The package was primarily developed by John Emmons (IBM), who is the chairman of the
+Unicode CLDR Technical Committee. Members of IBM's Dojo development team assisted with
+many of the resource loading issues.
+
+Strengths
+- Should work on any browser, even those that don't have a native implementation
+of ECMA-402.
+- Supports a wide variety of locales and calendar systems, using standardized JSON
+data as published by the Unicode CLDR project.
+- Consistency - The package will produce the same results no matter which browser you
+are running on. There are some inconsistencies in the results produced by the
+native implementations in the various browsers.
+- Provides a "shim" feature, which allows the application to use the native ECMA-402
+implementation in the browser if it is available, or the Javascript implementation
+if native is not available.
+- Allows multiple locales to be available to the application via the locale preloading
+mechanism.
+
+Weaknesses
+- Speed - JavaScript implementation of ECMA-402 requires code and data loading, which
+will always be slower than a native implementation.
+- Official version not yet released - still under development.
+
+Links
+- http://github.com/ibm-js/ecma402
+- http://www.ecma-international.org/ecma-402/1.0/
+
 ### Cldrpluralruleparser
 
 Standalone library created by Santhosh Thottingal that provides CLDR plural rule
@@ -67,7 +98,7 @@ formatting and parsing, date and time formatting and parsing, message
 formatting (including plural and gender support), access to some of the CLDR
 data (like currency symbols).
 
-Strenghts
+Strengths
 - Based on CLDR data (largest and most extensive i18n repository).
 
 Weaknesses
