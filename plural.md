@@ -4,7 +4,10 @@
 
 | | Globalize<br><sub><sup>[jquery/globalize][]</sup></sub> | iLib |
 | --- | --- | --- |
-| Regular Plurals | | :heavy_check_mark: |
-| Slavic Plurals | | :heavy_check_mark: |
+| Plural | :heavy_check_mark: | :heavy_check_mark: |
+
+**Plural**
+
+TODO: Split this generic feature into: ordinal vs. cardinal.
 
 [jquery/globalize]: https://github.com/jquery/globalize/

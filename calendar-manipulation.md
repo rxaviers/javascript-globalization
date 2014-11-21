@@ -4,28 +4,41 @@
 
 | | iLib |
 | --- | --- |
+| Buddhist | :heavy_check_mark: thai solar |
+| Chinese | |
+| Dangi | |
+| Ethiopic amet alem | |
+| Ethiopic |
 | Gregorian | :heavy_check_mark: |
-| Julian | :heavy_check_mark: |
-| Persian | :heavy_check_mark: |
-| Thai Solar | :heavy_check_mark: |
 | Hebrew | :heavy_check_mark: |
-| Arabic civil | :heavy_check_mark: |
-| Localized formats | :heavy_check_mark: |
+| Islamic | |
+| Islamic civil | :heavy_check_mark: |
+| Julian | :heavy_check_mark: |
+| Japonese | |
+| Persian | :heavy_check_mark: |
 | Date conversions between calendars | :heavy_check_mark: |
 
+**Buddhist**
+
+TBD
+
+**Chinese**
+
+TBD
+
+**Dangi**
+
+TBD
+
+**Ethiopic amet alem**
+
+TBD
+
+**Ethiopic**
+
+TBD
+
 **Gregorian**
-
-TBD
-
-**Julian**
-
-TBD
-
-**Persian**
-
-TBD
-
-**Thai Solar**
 
 TBD
 
@@ -33,11 +46,23 @@ TBD
 
 TBD
 
-**Arabic civil**
+**Islamic**
 
 TBD
 
-**Localized formats**
+**Islamic civil**
+
+TBD
+
+**Julian**
+
+TBD
+
+**Japonese**
+
+TBD
+
+**Persian**
 
 TBD
 

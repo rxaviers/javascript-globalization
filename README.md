@@ -142,14 +142,14 @@ Links:
 | [Unit Format][]<br><sub><sup>1,234.56 feet, 98 minutes</sup></sub> | | | | | | :heavy_check_mark: |
 | [Unit Conversion][]<br><sub><sup>1 mile -> 16.09 km</sup></sub> | | | | | | :heavy_check_mark: |
 | &nbsp; | | | | | |
-| [Name Parse][]<br><sub><sup>John James Smith -> {givenName: "John", middleNames: "James", familyName: "Smith"}</sup></sub> | | | | | | :heavy_check_mark: |
 | [Name Format][]<br><sub><sup>{givenName: "John", middleNames: "James", familyName: "Smith"} -> John James Smith</sup></sub> | | | | | | :heavy_check_mark: |
+| [Name Parse][]<br><sub><sup>John James Smith -> {givenName: "John", middleNames: "James", familyName: "Smith"}</sup></sub> | | | | | | :heavy_check_mark: |
 | &nbsp; | | | | | |
-| [Address Parse][]<br><sub><sup>123 any st.<br>Santa Clara, CA 94044<br>USA ⟹ `{streetAddress:"123 any st.",locality:"Santa Clara",region:"CA",country:"USA",postalCode:"94044"}`</sup></sub> | | | | | | :heavy_check_mark: |
 | [Address Format][]<br><sub><sup></sup>`{streetAddress:"123 any st.",locality:"Santa Clara",region:"CA",country:"USA",postalCode:"94044"}` ⟹ 123 any st.<br>Santa Clara, CA 94044<br>USA</sub> | | | | | | :heavy_check_mark: |
+| [Address Parse][]<br><sub><sup>123 any st.<br>Santa Clara, CA 94044<br>USA ⟹ `{streetAddress:"123 any st.",locality:"Santa Clara",region:"CA",country:"USA",postalCode:"94044"}`</sup></sub> | | | | | | :heavy_check_mark: |
 | &nbsp; | | | | | |
-| [Phone Number Parse][]<br><sub><sup>1 (650) 555-1212 -> {trunkCode:"1",areaCode:"650",subscriberNumber:"5551212"}</sup></sub> | | | | | | :heavy_check_mark:<br><sub><sup>20 locales</sup></sub> |
 | [Phone Number Format][]<br><sub><sup>{trunkCode:"1",areaCode:"650",subscriberNumber:"5551212"} -> 1 (650) 555-1212</sup></sub> | | | | | | :heavy_check_mark:<br><sub><sup>20 locales</sup></sub> |
+| [Phone Number Parse][]<br><sub><sup>1 (650) 555-1212 -> {trunkCode:"1",areaCode:"650",subscriberNumber:"5551212"}</sup></sub> | | | | | | :heavy_check_mark:<br><sub><sup>20 locales</sup></sub> |
 | [Phone Number Normalization][]<br><sub><sup>{subscriberNumber:"5551212"} -> `{iddCode:"+",trunkCode:"1",areaCode:"650",subscriberNumber:"5551212"}` | | | | | | :heavy_check_mark: |
 | [Phone Number Geolocation][]<br><sub><sup>{areaCode: "650",subscriberNumber:"5551212"} -> " | | | | | | :heavy_check_mark: |
 | &nbsp; | | | | | |
