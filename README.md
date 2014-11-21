@@ -132,7 +132,6 @@ Links:
 | [Date Format][]<br><sub><sup>`new Date()` ⟹ Oct 23, 2014, 9:00:00 AM</sup></sub> | :heavy_check_mark: | | :heavy_check_mark: | | :heavy_check_mark:<br><sub><sup>Via&nbsp;ECMA-402 or its polyfil</sup></sub> | :heavy_check_mark: |
 | [Date Parse][]<br><sub><sup>Oct 23, 2014, 9:00:00 AM ⟹ `new Date()`</sup></sub> | | | :heavy_check_mark: | | |
 | [Relative Time Format][]<br><sub><sup>`new Date()` ⟹ last month</sup></sub> | | | :soon: | | :heavy_check_mark:<br><sub><sup>Via&nbsp;[intl-relativeformat](https://github.com/yahoo/intl-relativeformat)</sup></sub> | :heavy_check_mark: |
-| [Duration Format][]<br><sub><sup>203:23:23</sup></sub> | | | | | | :heavy_check_mark: |
 | [Date Range Format][]<br><sub><sup>Jan 11-13, 2015</sup></sub> | | | | | | :heavy_check_mark: |
 | [Time Zone Support][]<br><sub><sup>Jan 13, 2015 KST</sup></sub> | | | | | | :heavy_check_mark: |
 | [Multiple Calendar Support][]<br><sub><sup>Aban 1, 1393 (Persian)</sup></sub> | | | | | | :heavy_check_mark: |
@@ -144,7 +143,7 @@ Links:
 | [Currency Parse][]<br><sub><sup>€1,000.00 ⟹ `{EUR: 1000.00}`</sup></sub> | | | :soon: | | | :heavy_check_mark: |
 | [Percentage Format][]<br><sub><sup>% 23,4 (tr-TR)</sup></sub> | | | | | | :heavy_check_mark: |
 | &nbsp; | | | | | |
-| [Unit Format][]<br><sub><sup>1,234.56 feet</sup></sub> | | | | | | :heavy_check_mark: |
+| [Unit Format][]<br><sub><sup>1,234.56 feet, 98 minutes</sup></sub> | | | | | | :heavy_check_mark: |
 | [Unit Conversion][]<br><sub><sup>1 mile -> 16.09 km</sup></sub> | | | | | | :heavy_check_mark: |
 | &nbsp; | | | | | |
 | [Name Parse][]<br><sub><sup>John James Smith -> {givenName: "John", middleNames: "James", familyName: "Smith"}</sup></sub> | | | | | | :heavy_check_mark: |
