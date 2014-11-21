@@ -133,8 +133,8 @@ Links:
 | [Date Parse][]<br><sub><sup>Oct 23, 2014, 9:00:00 AM ⟹ `new Date()`</sup></sub> | | | :heavy_check_mark: | | |
 | [Relative Time Format][]<br><sub><sup>`new Date()` ⟹ last month</sup></sub> | | | :soon: | | :heavy_check_mark:<br><sub><sup>Via&nbsp;[intl-relativeformat](https://github.com/yahoo/intl-relativeformat)</sup></sub> | :heavy_check_mark: |
 | [Date Range Format][]<br><sub><sup>Jan 11-13, 2015</sup></sub> | | | | | | :heavy_check_mark: |
-| [Time Zone Support][]<br><sub><sup>Jan 13, 2015 KST</sup></sub> | | | | | | :heavy_check_mark: |
-| [Multiple Calendar Support][]<br><sub><sup>Aban 1, 1393 (Persian)</sup></sub> | | | | | | :heavy_check_mark: |
+| [Calendar Manipulation][]<br><sub><sup>Aban 1, 1393 (Persian)</sup></sub> | | | | | | :heavy_check_mark: |
+| [Time Zone Manipulation][]<br><sub><sup>Jan 13, 1am New York time</sup></sub> | | | | | | :heavy_check_mark: |
 | &nbsp; | | | | | |
 | [Number Format][]<br><sub><sup>`12734.89` ⟹ 12,734.89</sup></sub> | :heavy_check_mark: | | :heavy_check_mark: | | :heavy_check_mark:<br><sub><sup>Via&nbsp;ECMA-402 or its polyfil</sup></sub> | :heavy_check_mark: |
 | [Number Parse][]<br><sub><sup>12,734.89 ⟹ `12734.89`</sup></sub> | | | :heavy_check_mark: | | | :heavy_check_mark: |
@@ -190,36 +190,36 @@ Links:
 [formatjs.io]: http://formatjs.io/
 [ilib]: http://sourceforge.net/projects/i18nlib/
 
-[Date Format]: ./date-format.md
-[Date Parse]: ./date-parse.md
-[Duration Format]: ./duration-format.md
-[Date Range Format]: ./date-range-format.md
-[Relative Time Format]: ./relative-time-format.md
-[Time Zone Support]: ./time-zone-support.md
-[Multiple Calendar Support]: ./multiple-calendar-support.md
-[Number Format]: ./number-format.md
-[Number Parse]: ./number-parse.md
+[Address Format]: ./address-format.md
+[Address Parse]: ./address-parse.md
+[Calendar Manipulation]: ./calendar-manipulation.md
+[Charset Mapping]: ./charset-mapping.md
+[Code Point Support]: ./code-point-support.md
+[Collation]: ./collation.md
 [Currency Format]: ./currency-format.md
 [Currency Parse]: ./currency-parse.md
-[Plural]: ./plural.md
-[Message Format]: ./message-format.md
-[Percentage Format]: ./percentage-format.md
-[Unit Format]: ./unit-format.md
-[Unit Conversion]: ./unit-conversion.md
-[Name Parse]: ./name-parse.md
-[Name Format]: ./name-format.md
-[Address Parse]: ./address-parse.md
-[Address Format]: ./address-format.md
-[Phone Number Parse]: ./phone-number-parse.md
-[Phone Number Format]: ./phone-number-format.md
-[Phone Number Normalization]: ./phone-umber-format.md
-[Charset Mapping]: ./charset-mapping.md
-[Unicode Normalization Algorithm]: ./unicode-normalization-algorithm.md
-[Code Point Support]: ./code-point-support.md
+[Date Format]: ./date-format.md
+[Date Parse]: ./date-parse.md
+[Date Range Format]: ./date-range-format.md
+[Duration Format]: ./duration-format.md
 [Glyph Support]: ./glyph-support.md
 [Locale-sensitive Capitalization]: ./locale-sensitive-capitalization.md
-[Unicode Character Properties]: ./unicode-character-properties.md
-[Phone Number Normalization]: ./phone-number-normalization.md
+[Message Format]: ./message-format.md
+[Name Format]: ./name-format.md
+[Name Parse]: ./name-parse.md
+[Number Format]: ./number-format.md
+[Number Parse]: ./number-parse.md
+[Percentage Format]: ./percentage-format.md
+[Phone Number Format]: ./phone-number-format.md
 [Phone Number Geolocation]: ./phone-number-geolocation.md
-[Collation]: ./collation.md
+[Phone Number Normalization]: ./phone-number-normalization.md
+[Phone Number Normalization]: ./phone-umber-format.md
+[Phone Number Parse]: ./phone-number-parse.md
+[Plural]: ./plural.md
+[Relative Time Format]: ./relative-time-format.md
 [Resource Bundle]: ./resource-bundle.md
+[Time Zone Manipulation]: ./time-zone-manipulation.md
+[Unicode Character Properties]: ./unicode-character-properties.md
+[Unicode Normalization Algorithm]: ./unicode-normalization-algorithm.md
+[Unit Conversion]: ./unit-conversion.md
+[Unit Format]: ./unit-format.md
