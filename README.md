@@ -139,8 +139,6 @@ Links:
 | [Number Format][]<br><sub><sup>`12734.89` ⟹ 12,734.89</sup></sub> | :heavy_check_mark: | | :heavy_check_mark: | | :heavy_check_mark:<br><sub><sup>Via&nbsp;ECMA-402 or its polyfil</sup></sub> | :heavy_check_mark: |
 | [Number Parse][]<br><sub><sup>12,734.89 ⟹ `12734.89`</sup></sub> | | | :heavy_check_mark: | | | :heavy_check_mark: |
 | &nbsp; | | | | | |
-| [Currency Format][]<br><sub><sup>`{EUR: 1000.00}` ⟹ €1,000.00</sup></sub> | :heavy_check_mark: | | :soon: | | :heavy_check_mark:<br><sub><sup>Via&nbsp;ECMA-402 or its polyfil</sup></sub> | :heavy_check_mark: |
-| [Currency Parse][]<br><sub><sup>€1,000.00 ⟹ `{EUR: 1000.00}`</sup></sub> | | | :soon: | | | :heavy_check_mark: |
 | [Percentage Format][]<br><sub><sup>% 23,4 (tr-TR)</sup></sub> | | | | | | :heavy_check_mark: |
 | &nbsp; | | | | | |
 | [Unit Format][]<br><sub><sup>1,234.56 feet, 98 minutes</sup></sub> | | | | | | :heavy_check_mark: |
@@ -196,8 +194,6 @@ Links:
 [Charset Mapping]: ./charset-mapping.md
 [Code Point Support]: ./code-point-support.md
 [Collation]: ./collation.md
-[Currency Format]: ./currency-format.md
-[Currency Parse]: ./currency-parse.md
 [Date Format]: ./date-format.md
 [Date Parse]: ./date-parse.md
 [Date Range Format]: ./date-range-format.md

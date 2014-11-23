@@ -2,10 +2,27 @@
 
 12,734.89 ⟹ `12734.89`
 
-| | ECMA-402<br><sub><sup>Native</sup></sub> | Globalize<br><sub><sup>[jquery/globalize][]</sup></sub> | iLib |
-| --- | --- | --- | --- |
-| Regular Parsing | | | :heavy_check_mark: |
-| Currency Parsing | | | :heavy_check_mark: |
-| Percentage Parsing | | | :heavy_check_mark: |
+| | ECMA-402<br><sub><sup>Native</sup></sub> | Globalize<br><sub><sup>[jquery/globalize][]</sup></sub> | FormatJS<br><sub><sup>[formatjs.io][]</sup></sub> | iLib |
+| --- | --- | --- | --- | --- |
+| Regular Parsing | | | | :heavy_check_mark: |
+| Percentage Parsing | | | | :heavy_check_mark: |
+| Currency Parsing<br><sub><sup>€1,000.00 ⟹ `{EUR: 1000.00}`</sup></sub> | | :soon: | | :heavy_check_mark: |
 
+**Regular Parsing**
+
+TBD
+
+**Percentage Parsing**
+
+TBD
+
+### Currency Parse
+
+€1,000.00 ⟹ `{EUR: 1000.00}`
+
+| | iLib |
+| --- | --- |
+| TBD | :heavy_check_mark: |
+
+[formatjs.io]: http://formatjs.io/
 [jquery/globalize]: https://github.com/jquery/globalize/
