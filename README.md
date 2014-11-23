@@ -139,8 +139,6 @@ Links:
 | [Number Format][]<br><sub><sup>`12734.89` ⟹ 12,734.89</sup></sub> | :heavy_check_mark: | | :heavy_check_mark: | | :heavy_check_mark:<br><sub><sup>Via&nbsp;ECMA-402 or its polyfil</sup></sub> | :heavy_check_mark: |
 | [Number Parse][]<br><sub><sup>12,734.89 ⟹ `12734.89`</sup></sub> | | | :heavy_check_mark: | | | :heavy_check_mark: |
 | &nbsp; | | | | | |
-| [Percentage Format][]<br><sub><sup>% 23,4 (tr-TR)</sup></sub> | | | | | | :heavy_check_mark: |
-| &nbsp; | | | | | |
 | [Unit Format][]<br><sub><sup>1,234.56 feet, 98 minutes</sup></sub> | | | | | | :heavy_check_mark: |
 | [Unit Conversion][]<br><sub><sup>1 mile -> 16.09 km</sup></sub> | | | | | | :heavy_check_mark: |
 | &nbsp; | | | | | |
@@ -205,7 +203,6 @@ Links:
 [Name Parse]: ./name-parse.md
 [Number Format]: ./number-format.md
 [Number Parse]: ./number-parse.md
-[Percentage Format]: ./percentage-format.md
 [Phone Number Format]: ./phone-number-format.md
 [Phone Number Geolocation]: ./phone-number-geolocation.md
 [Phone Number Normalization]: ./phone-number-normalization.md
