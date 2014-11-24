@@ -165,13 +165,13 @@ Links:
 ### jquery.i18n
 
 jQuery based library port of MediaWiki's client side localization framework.
-Used by Wikimedia Foundation. Uses JSON based message file format(aka. banana
-format). Messages are in MediaWiki's own syntax. Supported Plural, Gender,
-Grammer, Number formatting. Also supports recursive nesting of plural, gender,
-grammar etc.
+Used by Wikimedia Foundation. Uses JSON based message file format (aka. banana
+format). Messages are in MediaWiki's own syntax. Supports Plural, Gender,
+Grammar, Number formatting. Also supports recursive nesting of plural, gender,
+grammar, etc.
 
 Strenghts
-- Based on CLDR data (largest and most extensive i18n repository).
+- Based on CLDR data (the largest and the most extensive i18n repository).
 - Consistency. Same results are obtained across browsers.
 - Message validators (https://www.npmjs.org/package/grunt-banana-checker)
 
