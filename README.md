@@ -2,7 +2,7 @@
 
 Overview page that shows what solutions exist for JavaScript globalization
 (internationalization and localization). What is missing. What overlaps. Why
-each library was created. What are their goals, strengths and weaknesses.
+was each library created. What are their goals, strengths and weaknesses.
 
 - [Summary](#summary)
   - [ECMA-402](#ecma-402)
@@ -74,7 +74,7 @@ Strengths:
 - Built on standards: ECMA-402, CLDR, and ICU Message syntax.
 
 Weaknesses:
-- No parsing beyond what the `Date` and `Number` build-ins provide.
+- No parsing beyond what the `Date` and `Number` built-ins provide.
 
 Links:
 - http://formatjs.io/
@@ -92,7 +92,7 @@ if using multiple i18n libraries that leverage CLDR, and (d) run in browsers or
 node.js.
 
 Strengths
-- Based on CLDR data (largest and most extensive i18n repository).
+- Based on CLDR data (the most extensive i18n repository).
 - No bugs due to outdated i18n content (it has no hard coded i18n data).
 - Consistency. Same results are obtained across browsers.
 - Allow different locale instances running simultaneously.
@@ -108,7 +108,7 @@ formatting (including plural and gender support), access to some of the CLDR
 data (like currency symbols).
 
 Strengths
-- Based on CLDR data (largest and most extensive i18n repository).
+- Based on CLDR data (the most extensive i18n repository).
 - Consistency. Same results are obtained across browsers.
 
 Weaknesses
@@ -127,7 +127,7 @@ Unicode CLDR Technical Committee. Members of IBM's Dojo development team
 assisted with many of the resource loading issues.
 
 Strengths
-- Based on CLDR data (largest and most extensive i18n repository).
+- Based on CLDR data (the most extensive i18n repository).
 - Consistency. Same results are obtained across browsers.
 - Provides a "shim" feature, which allows the native ECMA-402 implementation to
   be used when available.
@@ -142,7 +142,7 @@ Links
 
 ### iLib
 
-iLib is a library of Javascript internationalization routines implemented in
+iLib is a library of JavaScript internationalization routines implemented in
 pure Javascript without many dependendencies on other libraries. It is the i18n
 library used in webOS, which is currently shipping on millions of LG SmartTVs.
 
@@ -165,13 +165,13 @@ Links:
 ### jquery.i18n
 
 jQuery based library port of MediaWiki's client side localization framework.
-Used by Wikimedia Foundation. Uses JSON based message file format (aka. banana
-format). Messages are in MediaWiki's own syntax. Supports Plural, Gender,
+Used by Wikimedia Foundation. Uses JSON based message file format (aka. "banana
+format"). Messages are in MediaWiki's own syntax. Supports Plural, Gender,
 Grammar, Number formatting. Also supports recursive nesting of plural, gender,
 grammar, etc.
 
 Strenghts
-- Based on CLDR data (the largest and the most extensive i18n repository).
+- Based on CLDR data (the most extensive i18n repository).
 - Consistency. Same results are obtained across browsers.
 - Message validators (https://www.npmjs.org/package/grunt-banana-checker)
 
