@@ -135,15 +135,16 @@ Links:
 - http://docs.jedlsoft.com/ilib/jsdoc/
 
 ### jquery.i18n
-jquery based library port of MediaWiki's client side localization framework.
-Used by Wikimedia Foundation. Uses JSON based message file format(aka. banana format).
-Messages are in MediaWiki's own syntax. Supported Plural, Gender, Grammer, Number formatting.
-Also supports recursive nesting of plural, gender, grammar etc.
+
+jQuery based library port of MediaWiki's client side localization framework.
+Used by Wikimedia Foundation. Uses JSON based message file format(aka. banana
+format). Messages are in MediaWiki's own syntax. Supported Plural, Gender,
+Grammer, Number formatting. Also supports recursive nesting of plural, gender,
+grammar etc.
 
 Strenghts
 - Based on CLDR data (largest and most extensive i18n repository).
-- Message validators exist(https://www.npmjs.org/package/grunt-banana-checker)
-- Extensible message syntax
+- Message validators (https://www.npmjs.org/package/grunt-banana-checker)
 
 Weaknesses
 - jQuery based library.
@@ -166,7 +167,6 @@ Links:
 | &nbsp; | | | | | | |
 | [Number Format][]<br><sub><sup>`12734.89` ⟹ 12,734.89</sup></sub> | :heavy_check_mark: | | :heavy_check_mark: | | :heavy_check_mark:<br><sub><sup>Via&nbsp;ECMA-402 or its polyfil</sup></sub> | :heavy_check_mark: | |
 | [Number Parse][]<br><sub><sup>12,734.89 ⟹ `12734.89`</sup></sub> | | | :heavy_check_mark: | | | :heavy_check_mark: | |
-| [Number transformation][]<br><sub><sup>0123456789 ⟹ `٠١٢٣٤٥٦٧٨٩`</sup></sub> | | | | | :heavy_check_mark:|
 | &nbsp; | | | | | | |
 | [Unit Format][]<br><sub><sup>1,234.56 feet, 98 minutes</sup></sub> | | | | | | :heavy_check_mark: | |
 | [Unit Conversion][]<br><sub><sup>1 mile ⟹ 16.09 km</sup></sub> | | | | | | :heavy_check_mark: | |
@@ -187,7 +187,6 @@ Links:
 | [Plural][]<br><sub><sup>`3` ⟹ `few`</sup></sub> | | :heavy_check_mark: | :heavy_check_mark:<br><sub><sup>Powered&nbsp;by&nbsp;[santhoshtr/cldrpluralruleparser][]</sup></sub> | | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:<br><sub><sup>Powered&nbsp;by&nbsp;[santhoshtr/cldrpluralruleparser][]</sup></sub> |
 | [Resource Bundle][]<br><sub><sup>`getString(id)` ⟹ "resource string"</sup></sub> | | | | | | :heavy_check_mark: | |
 | [Message Format][]<br><sub><sup>`You have {count, plural,`<br>` one {1 item}`<br>` other {# items}}` ⟹ You have 5 items</sup></sub> | | | :heavy_check_mark:<br><sub><sup>Powered&nbsp;by&nbsp;[slexaxton/messageformat.js][]</sup></sub> | :heavy_check_mark: | :heavy_check_mark:<br><sub><sup>Via&nbsp;[intl-messageformat](https://github.com/yahoo/intl-messageformat)</sup></sub> | :heavy_check_mark: | :heavy_check_mark: <br><sub><sup>Extensible mediawiki message format</sup></sub> |
-| Gender | | | | | | | :heavy_check_mark: |
 | [Unicode Normalization Algorithm] | | | | | | :heavy_check_mark: | |
 | [Code Point Support] | | | | | | :heavy_check_mark: | |
 | [Glyph Support] | | | | | | :heavy_check_mark: | |
@@ -202,9 +201,9 @@ Links:
 | &nbsp; | | | | | | | |
 | **Support** | | | | | | |
 | &nbsp; | | | | | | | |
-| Environments | Globals | AMD<br>CommonJS<br>Globals | AMD<br>CommonJS<br>Globals | AMD<br>CommonJS<br>Globals | ES6<br>CommonJS<br>Globals | jQuery |
+| Environments | Globals | AMD<br>CommonJS<br>Globals | AMD<br>CommonJS<br>Globals | AMD<br>CommonJS<br>Globals | ES6<br>CommonJS<br>Globals | Globals |
 | Node.js | >= 0.12<br><sub><sup>`en` only by default</sup></sub> | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Browser | Chrome: 24<br>Firefox: 29<br>Safari: N/A<br>Opera: 15<br>IE: 11<br><sub><sup>Reference MDN.</sup></sub> | | Chrome: <sub><sup>(Current - 1) or Current</sup></sub><br>Firefox: <sub><sup>(Current - 1) or Current</sup></sub><br>Safari: 5.1+<br>Opera: 12.1x, <sub><sup>(Current - 1) or Current</sup></sub><br>IE: 8 <sub><sup>(needs ES5 polyfill)</sup></sub>, IE9+ | | All ES3+ including IE6 | Chrome: 20+<br>Firefox: 25<br>Safari: 5.1+<br>IE: 9+ | Anything that jQuery supports |
+| Browser | Chrome: 24<br>Firefox: 29<br>Safari: N/A<br>Opera: 15<br>IE: 11<br><sub><sup>Reference MDN.</sup></sub> | | Chrome: <sub><sup>(Current - 1) or Current</sup></sub><br>Firefox: <sub><sup>(Current - 1) or Current</sup></sub><br>Safari: 5.1+<br>Opera: 12.1x, <sub><sup>(Current - 1) or Current</sup></sub><br>IE: 8 <sub><sup>(needs ES5 polyfill)</sup></sub>, IE9+ | | All ES3+ including IE6 | Chrome: 20+<br>Firefox: 25<br>Safari: 5.1+<br>IE: 9+ | |
 | Mobile | | | iOS: 6.1+<br>Android: 2.3, 4.0+ | | :heavy_check_mark: | :heavy_check_mark: | |
 
 [andyearnshaw/intl.js]: https://github.com/andyearnshaw/Intl.js/
