@@ -179,7 +179,7 @@ Links:
 | &nbsp; | | | | | | |
 | [Collation] | :heavy_check_mark: | | | | | :heavy_check_mark:<br><sub><sup>limited locales so far</sup></sub> |
 | &nbsp; | | | | | |
-| **I18n data** | Compiled | | [CLDR][] >= 25 | | [CLDR][] | Compiled or Dynamic load.<br>CLDR 22.1 |
+| **I18n data** | Compiled | | [CLDR][] >= 25 | | Compiled<br>Based on [CLDR][] | Compiled or Dynamic load<br>Based on CLDR 22.1 |
 | &nbsp; | | | | | | |
 | **Support** | | | | | |
 | &nbsp; | | | | | | |
