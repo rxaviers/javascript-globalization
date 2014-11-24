@@ -23,6 +23,7 @@ Weaknesses
 - Limited browser support (it may NOT be supported by your target client).
 - Lack of a resource loading mechanism (certain locale may NOT be available on
   your target client).
+- Inconsistency. Different browsers may give different results.
 
 Links
 - http://www.ecma-international.org/ecma-402/1.0/
@@ -31,29 +32,20 @@ Links
 
 ### ibm-js/ecma402
 
-JavaScript implementation of some of the ECMA-402 APIs as developed by IBM.
-It provides number formatting and date and time formatting, but not collation.
-The package was primarily developed by John Emmons (IBM), who is the chairman of the
-Unicode CLDR Technical Committee. Members of IBM's Dojo development team assisted with
-many of the resource loading issues.
+JavaScript implementation of some of the ECMA-402 APIs as developed by IBM. It
+provides number formatting and date and time formatting, but not collation. The
+package was primarily developed by John Emmons (IBM), who is the chairman of the
+Unicode CLDR Technical Committee. Members of IBM's Dojo development team
+assisted with many of the resource loading issues.
 
 Strengths
-- Should work on any browser, even those that don't have a native implementation
-of ECMA-402.
-- Supports a wide variety of locales and calendar systems, using standardized JSON
-data as published by the Unicode CLDR project.
-- Consistency - The package will produce the same results no matter which browser you
-are running on. There are some inconsistencies in the results produced by the
-native implementations in the various browsers.
-- Provides a "shim" feature, which allows the application to use the native ECMA-402
-implementation in the browser if it is available, or the Javascript implementation
-if native is not available.
-- Allows multiple locales to be available to the application via the locale preloading
-mechanism.
+- Based on CLDR data (largest and most extensive i18n repository).
+- Consistency. Same results are obtained across browsers.
+- Provides a "shim" feature, which allows the native ECMA-402 implementation to
+  be used when available.
+- Allows multiple locales to be available to the application.
 
 Weaknesses
-- Speed - JavaScript implementation of ECMA-402 requires code and data loading, which
-will always be slower than a native implementation.
 - Official version not yet released - still under development.
 
 Links
