@@ -89,11 +89,19 @@ Links:
 
 ### FormatJS
 
-FormatJS is a modular collection of JavaScript libraries for internationalization that are focused on formatting numbers, dates, and strings for displaying to people. It includes a set of core libraries that build on the JavaScript `Intl` built-ins and industry-wide i18n standards, _plus_ a set of integrations for common template and component libraries.
+FormatJS is a modular collection of JavaScript libraries for
+internationalization that are focused on formatting numbers, dates, and strings
+for displaying to people. It includes a set of core libraries that build on the
+JavaScript `Intl` built-ins and industry-wide i18n standards, _plus_ a set of
+integrations for common template and component libraries.
 
 Strengths:
-- Integrates with template/component libraries: [Handlebars](http://formatjs.io/handlebars/), [React](http://formatjs.io/react/), and [Dust](http://formatjs.io/dust/).
-- Modular, integration libs (above) are built on [core libraries](http://formatjs.io/github/#core): [intl-mesageformat](https://github.com/yahoo/intl-messageformat), [intl-relativetime](https://github.com/yahoo/intl-relativeformat).
+- Integrates with template/component libraries: [Handlebars][], [React][], and
+  [Dust][].
+- Modular, integration libs (above) are built on [core
+  libraries](http://formatjs.io/github/#core):
+  [intl-mesageformat](https://github.com/yahoo/intl-messageformat),
+  [intl-relativetime](https://github.com/yahoo/intl-relativeformat).
 - IE6+ support, automated testing in IE7+.
 - Built on standards: ECMA-402, CLDR, and ICU Message syntax.
 
@@ -106,7 +114,9 @@ Links:
 
 ### iLib
 
-iLib is a library of Javascript internationalization routines implemented in pure Javascript without many dependendencies on other libraries. It is the i18n library used in webOS, which is currently shipping on millions of LG SmartTVs.
+iLib is a library of Javascript internationalization routines implemented in
+pure Javascript without many dependendencies on other libraries. It is the i18n
+library used in webOS, which is currently shipping on millions of LG SmartTVs.
 
 Strengths:
 - Completeness. Goal is to be the "ICU" of Javascript!
@@ -115,7 +125,8 @@ Strengths:
 - Over 15,000 unit tests
 
 Weaknesses:
-- Code is large. Needs to be modularized and to support more of a jquery-style plugins.
+- Code is large. Needs to be modularized and to support more of a jquery-style
+  plugins.
 - Needs some performance enhancements
 
 Links:
@@ -179,12 +190,15 @@ Links:
 
 [andyearnshaw/intl.js]: https://github.com/andyearnshaw/Intl.js/
 [CLDR]: http://cldr.unicode.org/index/cldr-spec/json
+[Dust]: http://formatjs.io/dust/
+[formatjs.io]: http://formatjs.io/
+[Handlebars]: http://formatjs.io/handlebars/
 [ibm-js/ecma402]: https://github.com/ibm-js/ecma402
+[ilib]: http://sourceforge.net/projects/i18nlib/
 [jquery/globalize]: https://github.com/jquery/globalize/
+[React]: http://formatjs.io/react/
 [santhoshtr/cldrpluralruleparser]: https://github.com/santhoshtr/CLDRPluralRuleParser/
 [slexaxton/messageformat.js]: https://github.com/SlexAxton/messageformat.js/
-[formatjs.io]: http://formatjs.io/
-[ilib]: http://sourceforge.net/projects/i18nlib/
 
 [Address Format]: ./address-format.md
 [Address Parse]: ./address-parse.md
