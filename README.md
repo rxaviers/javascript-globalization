@@ -4,6 +4,18 @@ Overview page that shows what solutions exist for JavaScript globalization
 (internationalization and localization). What is missing. What overlaps. Why
 each library was created. What are their goals, strengths and weaknesses.
 
+- [Summary](#summary)
+  - [ECMA-402](#ecma-402)
+  - [Cldrpluralruleparser](#cldrpluralruleparser)
+  - [FormatJS](#formatjs)
+  - [Globalize](#globalize)
+  - [Google Closure i18n](#google-closure-i18n)
+  - [ibm-js/ecma402](#ibm-jsecma402)
+  - [iLib](#ilib)
+  - [jquery.i18n](#jqueryi18n)
+  - [Messageformat.js](#messageformatjs)
+- [Grid](#grid)
+
 ## Summary
 
 ### ECMA-402
@@ -30,28 +42,6 @@ Links
 - http://norbertlindenberg.com/2012/12/ecmascript-internationalization-api/index.html
 - http://generatedcontent.org/post/59403168016/esintlapi (locale support)
 
-### ibm-js/ecma402
-
-JavaScript implementation of some of the ECMA-402 APIs as developed by IBM. It
-provides number formatting and date and time formatting, but not collation. The
-package was primarily developed by John Emmons (IBM), who is the chairman of the
-Unicode CLDR Technical Committee. Members of IBM's Dojo development team
-assisted with many of the resource loading issues.
-
-Strengths
-- Based on CLDR data (largest and most extensive i18n repository).
-- Consistency. Same results are obtained across browsers.
-- Provides a "shim" feature, which allows the native ECMA-402 implementation to
-  be used when available.
-- Allows multiple locales to be available to the application.
-
-Weaknesses
-- Official version not yet released - still under development.
-
-Links
-- http://github.com/ibm-js/ecma402
-- http://www.ecma-international.org/ecma-402/1.0/
-
 ### Cldrpluralruleparser
 
 Standalone library created by Santhosh Thottingal that provides CLDR plural rule
@@ -60,56 +50,10 @@ parsing. Used by Wikimedia Foundation.
 Strengths
 - Based on CLDR data (largest and most extensive i18n repository).
 - No bugs due to outdated i18n content (it has no hard coded i18n data).
+- Consistency. Same results are obtained across browsers.
 
 Links:
 - https://github.com/santhoshtr/CLDRPluralRuleParser/
-
-### Globalize
-
-A jQuery project, initially created to fullfil jQuery UI (datepicker and spinner
-widgets). It provides number formatting and parsing, date and time formatting
-and parsing, message formatting, and plural support.
-
-The design goals are (a) to leverage the official CLDR JSON data, (b) allow
-users to load as much or as little data as they need, (c) avoid duplicating data
-if using multiple i18n libraries that leverage CLDR, and (d) run in browsers or
-node.js.
-
-Strengths
-- Based on CLDR data (largest and most extensive i18n repository).
-- No bugs due to outdated i18n content (it has no hard coded i18n data).
-- Allow different locale instances running simultaneously.
-
-Links:
-- https://github.com/jquery/globalize/
-
-### Google Closure i18n
-
-Part of the larger Closure library, based on CLDR data. Provides number
-formatting and parsing, date and time formatting and parsing, message
-formatting (including plural and gender support), access to some of the CLDR
-data (like currency symbols).
-
-Strengths
-- Based on CLDR data (largest and most extensive i18n repository).
-
-Weaknesses
-- Supports only one locale at the time (default model, can be bypassed).
-
-Links
-- https://developers.google.com/closure/
-- http://docs.closure-library.googlecode.com/git/namespace_goog_i18n.html
-
-### Messageformat.js
-
-Standalone library created by Alex Sexton that provides ICU MessageFormat
-support, with built-in SelectFormat and pluggable PluralFormat.
-
-Strengths
-- Precompile formatter for faster/smaller runtime.
-
-Links:
-- https://github.com/SlexAxton/messageformat.js/
 
 ### FormatJS
 
@@ -135,6 +79,66 @@ Weaknesses:
 Links:
 - http://formatjs.io/
 - http://formatjs.io/github/ (packages)
+
+### Globalize
+
+A jQuery project, initially created to fullfil jQuery UI (datepicker and spinner
+widgets). It provides number formatting and parsing, date and time formatting
+and parsing, message formatting, and plural support.
+
+The design goals are (a) to leverage the official CLDR JSON data, (b) allow
+users to load as much or as little data as they need, (c) avoid duplicating data
+if using multiple i18n libraries that leverage CLDR, and (d) run in browsers or
+node.js.
+
+Strengths
+- Based on CLDR data (largest and most extensive i18n repository).
+- No bugs due to outdated i18n content (it has no hard coded i18n data).
+- Consistency. Same results are obtained across browsers.
+- Allow different locale instances running simultaneously.
+
+Links:
+- https://github.com/jquery/globalize/
+
+### Google Closure i18n
+
+Part of the larger Closure library, based on CLDR data. Provides number
+formatting and parsing, date and time formatting and parsing, message
+formatting (including plural and gender support), access to some of the CLDR
+data (like currency symbols).
+
+Strengths
+- Based on CLDR data (largest and most extensive i18n repository).
+- Consistency. Same results are obtained across browsers.
+
+Weaknesses
+- Supports only one locale at the time (default model, can be bypassed).
+
+Links
+- https://developers.google.com/closure/
+- http://docs.closure-library.googlecode.com/git/namespace_goog_i18n.html
+
+### ibm-js/ecma402
+
+JavaScript implementation of some of the ECMA-402 APIs as developed by IBM. It
+provides number formatting and date and time formatting, but not collation. The
+package was primarily developed by John Emmons (IBM), who is the chairman of the
+Unicode CLDR Technical Committee. Members of IBM's Dojo development team
+assisted with many of the resource loading issues.
+
+Strengths
+- Based on CLDR data (largest and most extensive i18n repository).
+- Consistency. Same results are obtained across browsers.
+- Provides a "shim" feature, which allows the native ECMA-402 implementation to
+  be used when available.
+- Allows multiple locales to be available to the application.
+
+Weaknesses
+- Official version not yet released - still under development.
+
+Links
+- http://github.com/ibm-js/ecma402
+- http://www.ecma-international.org/ecma-402/1.0/
 
 ### iLib
 
@@ -168,6 +172,7 @@ grammar etc.
 
 Strenghts
 - Based on CLDR data (largest and most extensive i18n repository).
+- Consistency. Same results are obtained across browsers.
 - Message validators (https://www.npmjs.org/package/grunt-banana-checker)
 
 Weaknesses
@@ -175,6 +180,17 @@ Weaknesses
 
 Links:
 - https://github.com/wikimedia/jquery.i18n
+
+### Messageformat.js
+
+Standalone library created by Alex Sexton that provides ICU MessageFormat
+support, with built-in SelectFormat and pluggable PluralFormat.
+
+Strengths
+- Precompile formatter for faster/smaller runtime.
+
+Links:
+- https://github.com/SlexAxton/messageformat.js/
 
 ## Grid
 
