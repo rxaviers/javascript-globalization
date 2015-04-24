@@ -82,7 +82,7 @@ Links:
 
 ### Globalize
 
-A jQuery project, initially created to fullfil jQuery UI (datepicker and spinner
+A jQuery project, initially created to fulfill jQuery UI (datepicker and spinner
 widgets). It provides number formatting and parsing, date and time formatting
 and parsing, message formatting, and plural support.
 
